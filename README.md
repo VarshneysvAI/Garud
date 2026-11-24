@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/architecture_assets/garud_system_architecture.png" width="880" alt="GARUD 3-Tier Air-Gapped Cyber-Financial Intelligence Architecture" />
+  <img src="docs/architecture_assets/garud_logo.png" width="240" alt="GARUD (गरुड़) Official Logo" />
 </p>
 
 <h1 align="center">GARUD (गरुड़)</h1>
@@ -83,6 +83,10 @@ GARUD is designed around **three non-negotiable architectural defenses** against
 ## 3. Complete 3-Tier Intelligence Pipeline
 
 ### 3.1 Architecture Flow Overview
+
+<p align="center">
+  <img src="docs/architecture_assets/garud_system_architecture.png" width="880" alt="GARUD 3-Tier Air-Gapped Cyber-Financial Intelligence Architecture" />
+</p>
 
 ```mermaid
 flowchart LR
@@ -518,6 +522,7 @@ Garud/
 │   └── adversarial/.gitkeep                   # Unanchored-edge rejection tests & offline air-gap checks
 └── docs/
     ├── architecture_assets/.gitkeep
+    ├── architecture_assets/garud_logo.png
     └── architecture_assets/garud_system_architecture.png
 ```
 
