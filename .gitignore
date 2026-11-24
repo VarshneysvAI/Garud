@@ -1,0 +1,126 @@
+# ==============================================================================
+# GARUD (गरुड़) — Rajasthan Police Hackathon PS05
+# Air-Gapped Sovereign Evidence & Cyber-Financial Intelligence System
+# ==============================================================================
+
+# --- Python Bytecode, Packaging & Tooling Caches ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# --- Virtual Environments ---
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+
+# --- Local LLM Weights, Tokenizers & Model Caches (Keep out of Git) ---
+*.gguf
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.onnx
+models/
+ollama_models/
+huggingface_cache/
+.cache/
+paddleocr_models/
+surya_models/
+
+# --- Neo4j Local Data Dumps, Graph Stores & Runtime Logs ---
+*.dump
+neo4j_data/
+data/neo4j/
+neo4j/data/
+neo4j/logs/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.log
+logs/
+
+# --- Sensitive Raw Police Case Files & Pipeline Artifacts ---
+# Strictly block real bank statements, KYC sheets, FIR metadata, and runtime exports.
+# Explicitly allow .gitkeep markers and sanitized synthetic test fixtures.
+data/raw_inputs/**/*.pdf
+data/raw_inputs/**/*.csv
+data/raw_inputs/**/*.xlsx
+data/raw_inputs/**/*.xls
+data/raw_inputs/**/*.json
+data/raw_inputs/**/*.png
+data/raw_inputs/**/*.jpg
+data/raw_inputs/**/*.jpeg
+data/raw_inputs/**/*.tiff
+data/raw_inputs/**/*.tif
+!data/raw_inputs/**/.gitkeep
+!data/raw_inputs/**/sample_*
+!data/raw_inputs/**/synthetic_*
+
+data/tier1_parsed/*
+!data/tier1_parsed/.gitkeep
+
+data/tier2_resolved/*
+!data/tier2_resolved/.gitkeep
+
+data/outputs/graphs/*
+!data/outputs/graphs/.gitkeep
+
+data/outputs/legal_drafts/*
+!data/outputs/legal_drafts/.gitkeep
+
+# --- Environment Variables, Certificates & Keys ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+
+# --- OS & IDE Artifacts ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.tmp
